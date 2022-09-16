@@ -1,0 +1,144 @@
+ @import "variables";
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ *,
+ *::before,
+ *::after {
+     box-sizing: inherit;
+     margin: 0;
+     padding: 0;
+ }
+
+ //  ---------------------------------------------main-----------------------------------------------
+
+ .coffee {
+     display: flex;
+ }
+
+ .container {
+     display: flex;
+     flex-direction: column;
+     max-width: 100rem;
+     padding-left: 10%;
+     padding-right: 10%;
+     background-color: $bcolor1;
+     font-family: 'Roboto Condensed', sans-serif;
+
+ }
+
+ .heading2 {
+     display: flex;
+     background-color: white;
+     height: 3rem;
+     text-transform: uppercase;
+
+
+ }
+
+ .h3 {
+     text-transform: uppercase;
+     padding-left: 1rem;
+     padding-top: 0.8rem;
+ }
+
+ .paragraph {
+     display: flex;
+     flex-direction: column;
+     height: 5rem;
+
+
+
+ }
+
+ //  --------------------------------------boxes----------------------------
+
+ .boxes {
+     flex-direction: row;
+     display: flex;
+
+     flex-wrap: wrap;
+     justify-content: space-between;
+
+ }
+
+ .box {
+     display: flex;
+     background-color: $bottom-bcolor;
+     width: 28rem;
+     margin-bottom: 2rem;
+
+ }
+
+ .box__1 {
+     display: flex;
+     flex-direction: column;
+
+ }
+
+ .box__2 {
+     display: flex;
+     flex-direction: column;
+ }
+
+ .box__3 {
+     display: flex;
+     flex-direction: column;
+
+ }
+
+ .box__4 {
+     display: flex;
+     flex-direction: column;
+
+
+ }
+
+ .top {
+     height: 3rem;
+     background-color: $top-bcolor;
+
+ }
+
+
+ .image img {
+     object-fit: contain;
+     width: 100%;
+     height: 100%;
+
+ }
+
+
+ .bottom {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     height: 4rem;
+     background-color: $bottom-bcolor;
+     padding: 0.5rem;
+
+ }
+
+ .italics {
+     font-style: italic;
+ }
+
+ //  ---------------------media queries--------------------
+
+ @media (max-width: 800px) {
+     body {
+         display: none;
+     }
+ }
+
+ @media (max-width: 1200px) {
+     .boxes {
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+     }
+ }
