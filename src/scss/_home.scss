@@ -51,8 +51,18 @@ nav {
   .main-body {
     display: flex;
     flex-direction: column;
-    img {
-      width: 100%;
+    width: 100%;
+    &__image {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    &__map {
+      img {
+        width: 100%;
+        height: auto;
+      }
     }
     &__info {
       display: flex;
