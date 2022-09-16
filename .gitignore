@@ -13,6 +13,7 @@ desktop.ini
  
 # Node.js modules
 node_modules/
+email-attached/
  
 # Project build
 dist
